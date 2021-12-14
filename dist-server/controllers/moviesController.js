@@ -10,8 +10,7 @@ var _server = require("../server");
 
 async function getMovies(req, res) {
   try {
-    const moviesData = await (0, _server.getMoviesFromApi)(); // console.log("moviesData:", moviesData);
-
+    const moviesData = await (0, _server.getMoviesFromApi)();
     const data = JSON.stringify(moviesData);
     res.status(200).json({
       success: true,

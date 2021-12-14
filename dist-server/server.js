@@ -54,8 +54,7 @@ const getSearchedMovieFromApi = async searchReq => {
   try {
     const movieFromApi = await _axios.default.get(apiUrl + `&t=${searchReq}`);
     var guid = createGuid();
-    movieFromApi.data.id = guid; // moviesData.push(movieFromApi.data);
-
+    movieFromApi.data.id = guid;
     return movieFromApi;
   } catch (err) {
     console.log(err);

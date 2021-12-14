@@ -169,7 +169,7 @@ const MoviesPage = () => {
                     aria-labelledby="modal-modal-title"
                     aria-describedby="modal-modal-description"
                 >
-                    <Box sx={style}>
+                    <Box className="modal-box">
                         <Typography id="modal-modal-title" variant="h6" component="h2">
                             Title: {movie[0]?.Title}
                         </Typography>
